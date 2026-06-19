@@ -1,0 +1,1278 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinayak Somnath Bodke | Data Analyst & AI Portfolio</title>
+    <meta name="description" content="Portfolio of Vinayak Somnath Bodke - AI & Data Science Student, Data Analyst Aspirant">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Preloader Screen -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="loader-logo">VINAYAK<span>.BODKE</span></div>
+            <div class="loader-bar-bg">
+                <div class="loader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor & Circle Follower -->
+    <div id="custom-cursor"></div>
+    <div id="custom-cursor-follower"></div>
+
+    <!-- Floating Left Socials Bar -->
+    <div class="side-socials">
+        <a href="https://github.com/vinayakbodke82" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:vinayakbodke82@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+
+    <!-- Animated Particles Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+    
+    <!-- Ambient Glow Blobs -->
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header / Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">VINAYAK<span class="gradient-text">.BODKE</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#sandbox">Sandbox</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Education</a>
+                <a href="#certifications">Certificates</a>
+                <a href="#terminal">Shell</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <div class="hero-subtitle">Welcome to my space</div>
+                    <h1>Hi, I'm <span class="gradient-text">Vinayak Bodke</span></h1>
+                    <div class="typewriter-container">
+                        I <span id="typewriter"></span><span class="typed-cursor">|</span>
+                    </div>
+                    <p>B.Tech CSE student specializing in Artificial Intelligence & Data Science. Dedicated to translating messy datasets into visual intelligence and custom machine learning algorithms.</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-primary"><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual reveal">
+                    <!-- Custom Animated Data Dashboard SVG Graphic -->
+                    <svg class="dashboard-graphic" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <style>
+                            @keyframes drawLine {
+                                to { stroke-dashoffset: 0; }
+                            }
+                            @keyframes pulseNode {
+                                0%, 100% { r: 3.5; opacity: 0.6; }
+                                50% { r: 5.5; opacity: 1; }
+                            }
+                            @keyframes rotateChart {
+                                to { transform: rotate(360deg); }
+                            }
+                            .chart-line {
+                                stroke-dasharray: 250;
+                                stroke-dashoffset: 250;
+                                animation: drawLine 3.5s ease-in-out forwards infinite;
+                            }
+                            .grid-node {
+                                animation: pulseNode 2s infinite alternate;
+                            }
+                            .rotate-circle {
+                                transform-origin: 145px 125px;
+                                animation: rotateChart 12s linear infinite;
+                            }
+                        </style>
+                        <!-- Card Border / Background -->
+                        <rect x="10" y="10" width="180" height="180" rx="16" fill="#ffffff" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.5"/>
+                        <rect x="10" y="10" width="180" height="180" rx="16" fill="rgba(79, 70, 229, 0.01)"/>
+                        
+                        <!-- Top Bar Windows Controls -->
+                        <circle cx="28" cy="25" r="3.5" fill="#ef4444"/>
+                        <circle cx="40" cy="25" r="3.5" fill="#f59e0b"/>
+                        <circle cx="52" cy="25" r="3.5" fill="#10b981"/>
+                        
+                        <!-- Inner Grid Panels -->
+                        <rect x="22" y="45" width="156" height="55" rx="8" fill="rgba(0,0,0,0.01)" stroke="rgba(15, 23, 42, 0.04)" stroke-width="1"/>
+                        <rect x="22" y="110" width="92" height="68" rx="8" fill="rgba(0,0,0,0.01)" stroke="rgba(15, 23, 42, 0.04)" stroke-width="1"/>
+                        <rect x="122" y="110" width="56" height="68" rx="8" fill="rgba(0,0,0,0.01)" stroke="rgba(15, 23, 42, 0.04)" stroke-width="1"/>
+                        
+                        <!-- Chart Lines in Main Panel -->
+                        <path class="chart-line" d="M30 85 l25-25 l30 15 l45-30 l25 20" stroke="#00d3ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path class="chart-line" d="M30 85 l25-25 l30 15 l45-30 l25 20" stroke="rgba(0, 211, 255, 0.2)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <!-- Pulsing Data Nodes -->
+                        <circle class="grid-node" cx="55" cy="60" r="4.5" fill="#6366f1"/>
+                        <circle class="grid-node" cx="110" cy="45" r="4.5" fill="#00d3ff" style="animation-delay: 0.6s"/>
+                        
+                        <!-- Mini Bar Charts inside bottom panel -->
+                        <rect x="34" y="145" width="8" height="20" rx="1" fill="#6366f1" opacity="0.8"/>
+                        <rect x="46" y="135" width="8" height="30" rx="1" fill="#00d3ff" opacity="0.8"/>
+                        <rect x="58" y="125" width="8" height="40" rx="1" fill="#6366f1" opacity="0.8"/>
+                        <rect x="70" y="140" width="8" height="25" rx="1" fill="#00d3ff" opacity="0.8"/>
+                        
+                        <!-- Rotating Circular Loader in Right bottom panel -->
+                        <circle class="rotate-circle" cx="150" cy="144" r="14" stroke="rgba(0, 0, 0, 0.03)" stroke-width="3"/>
+                        <circle class="rotate-circle" cx="150" cy="144" r="14" stroke="#00d3ff" stroke-width="3" stroke-dasharray="88" stroke-dashoffset="30" stroke-linecap="round"/>
+                        <circle cx="150" cy="144" r="4" fill="#6366f1"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Counter Section -->
+        <section class="stats">
+            <div class="container stats-grid reveal">
+                <div class="glass-card stat-card">
+                    <div class="stat-number">6.77</div>
+                    <div class="stat-label">CGPA</div>
+                </div>
+                <div class="glass-card stat-card">
+                    <div class="stat-number">2+</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="glass-card stat-card">
+                    <div class="stat-number">7+</div>
+                    <div class="stat-label">Certifications</div>
+                </div>
+                <div class="glass-card stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Skills</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container reveal">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="glass-card">
+                        <p class="about-text">
+                            I am a B.Tech CSE student (Artificial Intelligence & Data Science) at Pimpri Chinchwad University (2023–2027) with a strong foundation in analysis and machine learning.
+                        </p>
+                        <p class="about-highlight">
+                            "Bridging the gap between raw database metrics and impactful business insights."
+                        </p>
+                        <p class="about-text">
+                            My expertise lies in Exploratory Data Analysis, building machine learning models, optimizing relational databases, and designing KPI metrics dashboards. I strive to build clean, maintainable analytical components.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section - Categorized Badges Grid -->
+        <section id="skills" class="skills">
+            <div class="container reveal">
+                <h2 class="section-title">Skills Matrix</h2>
+                <div class="skills-grid">
+                    <!-- Category 1 -->
+                    <div class="glass-card skills-category">
+                        <h3><i class="fa-solid fa-chart-pie"></i> Languages & Tools</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="skill-badge"><i class="fa-solid fa-database"></i> SQL</span>
+                            <span class="skill-badge"><i class="fa-solid fa-square-poll-vertical"></i> R Lang</span>
+                            <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git</span>
+                            <span class="skill-badge"><i class="fa-brands fa-github"></i> GitHub</span>
+                            <span class="skill-badge"><i class="fa-solid fa-code"></i> VS Code</span>
+                        </div>
+                    </div>
+                    <!-- Category 2 -->
+                    <div class="glass-card skills-category">
+                        <h3><i class="fa-solid fa-cubes"></i> Libraries & Frameworks</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Pandas</span>
+                            <span class="skill-badge">NumPy</span>
+                            <span class="skill-badge">Scikit-Learn</span>
+                            <span class="skill-badge">Matplotlib</span>
+                            <span class="skill-badge">Seaborn</span>
+                            <span class="skill-badge"><i class="fa-solid fa-window-maximize"></i> Streamlit</span>
+                        </div>
+                    </div>
+                    <!-- Category 3 -->
+                    <div class="glass-card skills-category">
+                        <h3><i class="fa-solid fa-database"></i> Databases</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge">MySQL</span>
+                            <span class="skill-badge">PostgreSQL</span>
+                            <span class="skill-badge">SQLite</span>
+                        </div>
+                    </div>
+                    <!-- Category 4 -->
+                    <div class="glass-card skills-category">
+                        <h3><i class="fa-solid fa-robot"></i> Data Analysis & ML</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge">EDA</span>
+                            <span class="skill-badge">Feature Engineering</span>
+                            <span class="skill-badge">Statistical Analysis</span>
+                            <span class="skill-badge">Supervised ML</span>
+                            <span class="skill-badge">Data Cleansing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Data Sandbox Section -->
+        <section id="sandbox">
+            <div class="container reveal">
+                <h2 class="section-title">Interactive Data Sandbox</h2>
+                <p style="color: var(--text-muted); margin-bottom: 30px; max-width: 600px;">
+                    Experience my analytical process. Select a dataset to review the executed logic and observe the computed statistics and chart outputs in real-time.
+                </p>
+                
+                <div class="glass-card sandbox-card">
+                    <div class="sandbox-controls">
+                        <div class="sandbox-selector">
+                            <button class="sandbox-tab active" data-target="fitness"><i class="fa-solid fa-heart-pulse"></i> Fitness Tracker</button>
+                            <button class="sandbox-tab" data-target="netflix"><i class="fa-solid fa-film"></i> Netflix Catalog</button>
+                        </div>
+                        <div class="sandbox-actions">
+                            <span style="font-size: 0.8rem; color: var(--color-success); display: inline-flex; align-items: center; gap: 6px;">
+                                <i class="fa-solid fa-circle-check"></i> Sandbox Connected
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="sandbox-layout">
+                        <!-- Left: Python query view -->
+                        <div class="sandbox-code-panel">
+                            <div class="sandbox-code-header">
+                                <span>analysis.py</span>
+                                <span>Python 3.10</span>
+                            </div>
+                            <pre class="sandbox-code"><code id="sandbox-code-display"></code></pre>
+                        </div>
+                        
+                        <!-- Right: Output Visualizations -->
+                        <div class="sandbox-viz-panel">
+                            <div id="sandbox-viz-stats" class="viz-stats">
+                                <!-- Stats injected by script -->
+                            </div>
+                            
+                            <div id="sandbox-chart-area" class="viz-chart-area">
+                                <!-- Bars injected by script -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container reveal">
+                <div class="projects-header">
+                    <div>
+                        <h2 class="section-title">Projects</h2>
+                    </div>
+                    <div class="project-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="analysis">Analysis</button>
+                        <button class="filter-btn" data-filter="dashboard">BI Dashboards</button>
+                        <button class="filter-btn" data-filter="ai">GenAI & ML</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Card 1 -->
+                    <div class="glass-card project-card" data-category="analysis" data-project="fitness">
+                        <div class="project-visual">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Streamlit</span>
+                                <span class="tech-tag">Pandas</span>
+                            </div>
+                            <h3>Fitness Tracker Analysis</h3>
+                            <p>Integrated steps, calories, and sleep trackers into a cohesive Streamlit analytical dashboard featuring trend lines and correlations.</p>
+                            <div class="project-actions">
+                                <a href="https://github.com/vinayakbodke82" target="_blank" class="project-action-btn project-action-btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="#" target="_blank" class="project-action-btn project-action-btn-secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="glass-card project-card" data-category="dashboard" data-project="dashboard">
+                        <div class="project-visual">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech">
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">Data Model</span>
+                            </div>
+                            <h3>Data Analysis Dashboard</h3>
+                            <p>Aggregated relational retail databases, optimized queries, and compiled KPIs utilizing clean star schema modeling.</p>
+                            <div class="project-actions">
+                                <a href="https://github.com/vinayakbodke82" target="_blank" class="project-action-btn project-action-btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="#" target="_blank" class="project-action-btn project-action-btn-secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="glass-card project-card" data-category="ai" data-project="gemini">
+                        <div class="project-visual">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech">
+                                <span class="tech-tag">Gemini API</span>
+                                <span class="tech-tag">GCP Cloud Run</span>
+                                <span class="tech-tag">AI Studio</span>
+                            </div>
+                            <h3>Gemini Agent Cloud Deployment</h3>
+                            <p>Engineered and deployed a Generative AI assistant configured via Google AI Studio prompting and containerized on GCP Cloud Run.</p>
+                            <div class="project-actions">
+                                <a href="https://github.com/vinayakbodke82" target="_blank" class="project-action-btn project-action-btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="https://ais-dev-txje2stkm5umdugwzw5ppf-929567928269.asia-east1.run.app/" target="_blank" class="project-action-btn project-action-btn-secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live App</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Timeline Section -->
+        <section id="experience">
+            <div class="container reveal">
+                <h2 class="section-title">Education & Milestones</h2>
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023 – 2027</div>
+                        <div class="timeline-content">
+                            <h3>B.Tech CSE (AI & Data Science)</h3>
+                            <div class="timeline-subtitle">Pimpri Chinchwad University, Pune</div>
+                            <p>Focusing on Core Data Science, Database Management Systems, and Artificial Intelligence foundations. Current CGPA: 6.77</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Passed in 2023</div>
+                        <div class="timeline-content">
+                            <h3>Class XII (HSC Board)</h3>
+                            <div class="timeline-subtitle">DY Patil ACS College</div>
+                            <p>Completed secondary science education focusing on Mathematics and Computer Science basics.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Passed in 2021</div>
+                        <div class="timeline-content">
+                            <h3>Class X (SSC Board)</h3>
+                            <div class="timeline-subtitle">Lion’s Club Education Association English Medium School</div>
+                            <p>Foundational primary education with standard science curriculum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- ===== CERTIFICATES SECTION ===== -->
+        <section id="certifications" class="certs-section">
+            <div class="container reveal">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-sub">Verified Coursera credentials from world-class institutions</p>
+
+                <div class="certs-showcase">
+
+                    <!-- Certificate 1: Programming for Everybody -->
+                    <div class="cert-card-v2">
+                        <div class="cert-card-img-wrap">
+                            <img src="certs/cert_python_umich.png" alt="Programming for Everybody Certificate" loading="lazy">
+                            <div class="cert-card-overlay">
+                                <a href="https://coursera.org/verify/VZE7K8YlGEOR" target="_blank" class="cert-view-btn">
+                                    <i class="fa-solid fa-certificate"></i> Verify on Coursera
+                                </a>
+                            </div>
+                            <div class="cert-ribbon"><i class="fa-solid fa-check-circle"></i> Verified</div>
+                        </div>
+                        <div class="cert-card-info">
+                            <div class="cert-issuer-row">
+                                <div class="cert-issuer-badge umich-bg">M</div>
+                                <span class="cert-issuer-name">University of Michigan</span>
+                            </div>
+                            <h3 class="cert-title">Programming for Everybody</h3>
+                            <p class="cert-subtitle">Getting Started with Python</p>
+                            <div class="cert-meta-row">
+                                <span><i class="fa-regular fa-calendar"></i> Nov 2024</span>
+                                <span class="cert-type-badge">Course</span>
+                            </div>
+                            <div class="cert-tags">
+                                <span>Python</span><span>Programming</span><span>Basics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2: Agile Project Management -->
+                    <div class="cert-card-v2">
+                        <div class="cert-card-img-wrap">
+                            <img src="certs/cert_agile_google.png" alt="Agile Project Management Certificate" loading="lazy">
+                            <div class="cert-card-overlay">
+                                <a href="https://coursera.org/verify/N0OTK6P1RC2" target="_blank" class="cert-view-btn">
+                                    <i class="fa-solid fa-certificate"></i> Verify on Coursera
+                                </a>
+                            </div>
+                            <div class="cert-ribbon"><i class="fa-solid fa-check-circle"></i> Verified</div>
+                        </div>
+                        <div class="cert-card-info">
+                            <div class="cert-issuer-row">
+                                <div class="cert-issuer-badge google-bg">G</div>
+                                <span class="cert-issuer-name">Google</span>
+                            </div>
+                            <h3 class="cert-title">Agile Project Management</h3>
+                            <p class="cert-subtitle">Google Career Certificates</p>
+                            <div class="cert-meta-row">
+                                <span><i class="fa-regular fa-calendar"></i> Jul 2025</span>
+                                <span class="cert-type-badge">Course</span>
+                            </div>
+                            <div class="cert-tags">
+                                <span>Agile</span><span>Scrum</span><span>Project Mgmt</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 3: Power BI -->
+                    <div class="cert-card-v2">
+                        <div class="cert-card-img-wrap">
+                            <img src="certs/cert_powerbi_microsoft.png" alt="Power BI Certificate" loading="lazy">
+                            <div class="cert-card-overlay">
+                                <a href="https://coursera.org/verify/WR1ZUE6dHK7R" target="_blank" class="cert-view-btn">
+                                    <i class="fa-solid fa-certificate"></i> Verify on Coursera
+                                </a>
+                            </div>
+                            <div class="cert-ribbon"><i class="fa-solid fa-check-circle"></i> Verified</div>
+                        </div>
+                        <div class="cert-card-info">
+                            <div class="cert-issuer-row">
+                                <div class="cert-issuer-badge microsoft-bg"><i class="fa-brands fa-microsoft"></i></div>
+                                <span class="cert-issuer-name">Microsoft</span>
+                            </div>
+                            <h3 class="cert-title">Visualization for Data Analysis with Power BI</h3>
+                            <p class="cert-subtitle">Microsoft on Coursera</p>
+                            <div class="cert-meta-row">
+                                <span><i class="fa-regular fa-calendar"></i> Mar 2026</span>
+                                <span class="cert-type-badge">Course</span>
+                            </div>
+                            <div class="cert-tags">
+                                <span>Power BI</span><span>Data Viz</span><span>Dashboards</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 4: R Programming -->
+                    <div class="cert-card-v2">
+                        <div class="cert-card-img-wrap">
+                            <img src="certs/cert_r_packt.png" alt="R Programming Certificate" loading="lazy">
+                            <div class="cert-card-overlay">
+                                <a href="https://coursera.org/verify/3WDCOHL7Z5FG" target="_blank" class="cert-view-btn">
+                                    <i class="fa-solid fa-certificate"></i> Verify on Coursera
+                                </a>
+                            </div>
+                            <div class="cert-ribbon"><i class="fa-solid fa-check-circle"></i> Verified</div>
+                        </div>
+                        <div class="cert-card-info">
+                            <div class="cert-issuer-row">
+                                <div class="cert-issuer-badge packt-bg">P</div>
+                                <span class="cert-issuer-name">Packt</span>
+                            </div>
+                            <h3 class="cert-title">R Programming for Statistics and Data Science</h3>
+                            <p class="cert-subtitle">Packt on Coursera</p>
+                            <div class="cert-meta-row">
+                                <span><i class="fa-regular fa-calendar"></i> Oct 2025</span>
+                                <span class="cert-type-badge">Course</span>
+                            </div>
+                            <div class="cert-tags">
+                                <span>R</span><span>Statistics</span><span>Data Science</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 5: Personal Productivity -->
+                    <div class="cert-card-v2">
+                        <div class="cert-card-img-wrap">
+                            <img src="certs/cert_productivity_starweaver.png" alt="Personal Productivity Certificate" loading="lazy">
+                            <div class="cert-card-overlay">
+                                <a href="https://coursera.org/verify/d6421Q1QV2Q8" target="_blank" class="cert-view-btn">
+                                    <i class="fa-solid fa-certificate"></i> Verify on Coursera
+                                </a>
+                            </div>
+                            <div class="cert-ribbon"><i class="fa-solid fa-check-circle"></i> Verified</div>
+                        </div>
+                        <div class="cert-card-info">
+                            <div class="cert-issuer-row">
+                                <div class="cert-issuer-badge starweaver-bg">S</div>
+                                <span class="cert-issuer-name">Starweaver</span>
+                            </div>
+                            <h3 class="cert-title">Personal Productivity, Time Management and Prioritization</h3>
+                            <p class="cert-subtitle">Starweaver on Coursera</p>
+                            <div class="cert-meta-row">
+                                <span><i class="fa-regular fa-calendar"></i> Nov 2024</span>
+                                <span class="cert-type-badge">Course</span>
+                            </div>
+                            <div class="cert-tags">
+                                <span>Productivity</span><span>Time Mgmt</span><span>Soft Skills</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section> html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinayak Somnath Bodke | Data Analyst & AI Portfolio</title>
+    <meta name="description" content="Portfolio of Vinayak Somnath Bodke - AI & Data Science Student, Data Analyst Aspirant">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Preloader Screen -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="loader-logo">VINAYAK<span>.BODKE</span></div>
+            <div class="loader-bar-bg">
+                <div class="loader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom Cursor & Circle Follower -->
+    <div id="custom-cursor"></div>
+    <div id="custom-cursor-follower"></div>
+
+    <!-- Floating Left Socials Bar -->
+    <div class="side-socials">
+        <a href="https://github.com/vinayakbodke82" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="#" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:vinayakbodke82@gmail.com" title="Email"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+
+    <!-- Animated Particles Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+    
+    <!-- Ambient Glow Blobs -->
+    <div class="ambient-glow-1"></div>
+    <div class="ambient-glow-2"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+
+    <!-- Header / Navigation -->
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="logo">VINAYAK<span class="gradient-text">.BODKE</span></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#sandbox">Sandbox</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Education</a>
+                <a href="#certifications">Certificates</a>
+                <a href="#terminal">Shell</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <div class="hero-subtitle">Welcome to my space</div>
+                    <h1>Hi, I'm <span class="gradient-text">Vinayak Bodke</span></h1>
+                    <div class="typewriter-container">
+                        I <span id="typewriter"></span><span class="typed-cursor">|</span>
+                    </div>
+                    <p>B.Tech CSE student specializing in Artificial Intelligence & Data Science. Dedicated to translating messy datasets into visual intelligence and custom machine learning algorithms.</p>
+                    <div class="btn-group">
+                        <a href="#" class="btn btn-primary"><i class="fa-solid fa-file-arrow-down"></i> Download Resume</a>
+                        <a href="#contact" class="btn btn-secondary">Get in Touch <i class="fa-solid fa-arrow-right-long"></i></a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual reveal">
+                    <!-- Custom Animated Data Dashboard SVG Graphic -->
+                    <svg class="dashboard-graphic" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <style>
+                            @keyframes drawLine {
+                                to { stroke-dashoffset: 0; }
+                            }
+                            @keyframes pulseNode {
+                                0%, 100% { r: 3.5; opacity: 0.6; }
+                                50% { r: 5.5; opacity: 1; }
+                            }
+                            @keyframes rotateChart {
+                                to { transform: rotate(360deg); }
+                            }
+                            .chart-line {
+                                stroke-dasharray: 250;
+                                stroke-dashoffset: 250;
+                                animation: drawLine 3.5s ease-in-out forwards infinite;
+                            }
+                            .grid-node {
+                                animation: pulseNode 2s infinite alternate;
+                            }
+                            .rotate-circle {
+                                transform-origin: 145px 125px;
+                                animation: rotateChart 12s linear infinite;
+                            }
+                        </style>
+                        <!-- Card Border / Background -->
+                        <rect x="10" y="10" width="180" height="180" rx="16" fill="#ffffff" stroke="rgba(15, 23, 42, 0.08)" stroke-width="1.5"/>
+                        <rect x="10" y="10" width="180" height="180" rx="16" fill="rgba(79, 70, 229, 0.01)"/>
+                        
+                        <!-- Top Bar Windows Controls -->
+                        <circle cx="28" cy="25" r="3.5" fill="#ef4444"/>
+                        <circle cx="40" cy="25" r="3.5" fill="#f59e0b"/>
+                        <circle cx="52" cy="25" r="3.5" fill="#10b981"/>
+                        
+                        <!-- Inner Grid Panels -->
+                        <rect x="22" y="45" width="156" height="55" rx="8" fill="rgba(0,0,0,0.01)" stroke="rgba(15, 23, 42, 0.04)" stroke-width="1"/>
+                        <rect x="22" y="110" width="92" height="68" rx="8" fill="rgba(0,0,0,0.01)" stroke="rgba(15, 23, 42, 0.04)" stroke-width="1"/>
+                        <rect x="122" y="110" width="56" height="68" rx="8" fill="rgba(0,0,0,0.01)" stroke="rgba(15, 23, 42, 0.04)" stroke-width="1"/>
+                        
+                        <!-- Chart Lines in Main Panel -->
+                        <path class="chart-line" d="M30 85 l25-25 l30 15 l45-30 l25 20" stroke="#00d3ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path class="chart-line" d="M30 85 l25-25 l30 15 l45-30 l25 20" stroke="rgba(0, 211, 255, 0.2)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+                        
+                        <!-- Pulsing Data Nodes -->
+                        <circle class="grid-node" cx="55" cy="60" r="4.5" fill="#6366f1"/>
+                        <circle class="grid-node" cx="110" cy="45" r="4.5" fill="#00d3ff" style="animation-delay: 0.6s"/>
+                        
+                        <!-- Mini Bar Charts inside bottom panel -->
+                        <rect x="34" y="145" width="8" height="20" rx="1" fill="#6366f1" opacity="0.8"/>
+                        <rect x="46" y="135" width="8" height="30" rx="1" fill="#00d3ff" opacity="0.8"/>
+                        <rect x="58" y="125" width="8" height="40" rx="1" fill="#6366f1" opacity="0.8"/>
+                        <rect x="70" y="140" width="8" height="25" rx="1" fill="#00d3ff" opacity="0.8"/>
+                        
+                        <!-- Rotating Circular Loader in Right bottom panel -->
+                        <circle class="rotate-circle" cx="150" cy="144" r="14" stroke="rgba(0, 0, 0, 0.03)" stroke-width="3"/>
+                        <circle class="rotate-circle" cx="150" cy="144" r="14" stroke="#00d3ff" stroke-width="3" stroke-dasharray="88" stroke-dashoffset="30" stroke-linecap="round"/>
+                        <circle cx="150" cy="144" r="4" fill="#6366f1"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Counter Section -->
+        <section class="stats">
+            <div class="container stats-grid reveal">
+                <div class="glass-card stat-card">
+                    <div class="stat-number">6.77</div>
+                    <div class="stat-label">CGPA</div>
+                </div>
+                <div class="glass-card stat-card">
+                    <div class="stat-number">2+</div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div class="glass-card stat-card">
+                    <div class="stat-number">7+</div>
+                    <div class="stat-label">Certifications</div>
+                </div>
+                <div class="glass-card stat-card">
+                    <div class="stat-number">15+</div>
+                    <div class="stat-label">Skills</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <div class="container reveal">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="glass-card">
+                        <p class="about-text">
+                            I am a B.Tech CSE student (Artificial Intelligence & Data Science) at Pimpri Chinchwad University (2023–2027) with a strong foundation in analysis and machine learning.
+                        </p>
+                        <p class="about-highlight">
+                            "Bridging the gap between raw database metrics and impactful business insights."
+                        </p>
+                        <p class="about-text">
+                            My expertise lies in Exploratory Data Analysis, building machine learning models, optimizing relational databases, and designing KPI metrics dashboards. I strive to build clean, maintainable analytical components.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section - Categorized Badges Grid -->
+        <section id="skills" class="skills">
+            <div class="container reveal">
+                <h2 class="section-title">Skills Matrix</h2>
+                <div class="skills-grid">
+                    <!-- Category 1 -->
+                    <div class="glass-card skills-category">
+                        <h3><i class="fa-solid fa-chart-pie"></i> Languages & Tools</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge"><i class="fa-brands fa-python"></i> Python</span>
+                            <span class="skill-badge"><i class="fa-solid fa-database"></i> SQL</span>
+                            <span class="skill-badge"><i class="fa-solid fa-square-poll-vertical"></i> R Lang</span>
+                            <span class="skill-badge"><i class="fa-brands fa-git-alt"></i> Git</span>
+                            <span class="skill-badge"><i class="fa-brands fa-github"></i> GitHub</span>
+                            <span class="skill-badge"><i class="fa-solid fa-code"></i> VS Code</span>
+                        </div>
+                    </div>
+                    <!-- Category 2 -->
+                    <div class="glass-card skills-category">
+                        <h3><i class="fa-solid fa-cubes"></i> Libraries & Frameworks</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge">Pandas</span>
+                            <span class="skill-badge">NumPy</span>
+                            <span class="skill-badge">Scikit-Learn</span>
+                            <span class="skill-badge">Matplotlib</span>
+                            <span class="skill-badge">Seaborn</span>
+                            <span class="skill-badge"><i class="fa-solid fa-window-maximize"></i> Streamlit</span>
+                        </div>
+                    </div>
+                    <!-- Category 3 -->
+                    <div class="glass-card skills-category">
+                        <h3><i class="fa-solid fa-database"></i> Databases</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge">MySQL</span>
+                            <span class="skill-badge">PostgreSQL</span>
+                            <span class="skill-badge">SQLite</span>
+                        </div>
+                    </div>
+                    <!-- Category 4 -->
+                    <div class="glass-card skills-category">
+                        <h3><i class="fa-solid fa-robot"></i> Data Analysis & ML</h3>
+                        <div class="skill-badges">
+                            <span class="skill-badge">EDA</span>
+                            <span class="skill-badge">Feature Engineering</span>
+                            <span class="skill-badge">Statistical Analysis</span>
+                            <span class="skill-badge">Supervised ML</span>
+                            <span class="skill-badge">Data Cleansing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Data Sandbox Section -->
+        <section id="sandbox">
+            <div class="container reveal">
+                <h2 class="section-title">Interactive Data Sandbox</h2>
+                <p style="color: var(--text-muted); margin-bottom: 30px; max-width: 600px;">
+                    Experience my analytical process. Select a dataset to review the executed logic and observe the computed statistics and chart outputs in real-time.
+                </p>
+                
+                <div class="glass-card sandbox-card">
+                    <div class="sandbox-controls">
+                        <div class="sandbox-selector">
+                            <button class="sandbox-tab active" data-target="fitness"><i class="fa-solid fa-heart-pulse"></i> Fitness Tracker</button>
+                            <button class="sandbox-tab" data-target="netflix"><i class="fa-solid fa-film"></i> Netflix Catalog</button>
+                        </div>
+                        <div class="sandbox-actions">
+                            <span style="font-size: 0.8rem; color: var(--color-success); display: inline-flex; align-items: center; gap: 6px;">
+                                <i class="fa-solid fa-circle-check"></i> Sandbox Connected
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="sandbox-layout">
+                        <!-- Left: Python query view -->
+                        <div class="sandbox-code-panel">
+                            <div class="sandbox-code-header">
+                                <span>analysis.py</span>
+                                <span>Python 3.10</span>
+                            </div>
+                            <pre class="sandbox-code"><code id="sandbox-code-display"></code></pre>
+                        </div>
+                        
+                        <!-- Right: Output Visualizations -->
+                        <div class="sandbox-viz-panel">
+                            <div id="sandbox-viz-stats" class="viz-stats">
+                                <!-- Stats injected by script -->
+                            </div>
+                            
+                            <div id="sandbox-chart-area" class="viz-chart-area">
+                                <!-- Bars injected by script -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container reveal">
+                <div class="projects-header">
+                    <div>
+                        <h2 class="section-title">Projects</h2>
+                    </div>
+                    <div class="project-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="analysis">Analysis</button>
+                        <button class="filter-btn" data-filter="dashboard">BI Dashboards</button>
+                        <button class="filter-btn" data-filter="ai">GenAI & ML</button>
+                    </div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Card 1 -->
+                    <div class="glass-card project-card" data-category="analysis" data-project="fitness">
+                        <div class="project-visual">
+                            <i class="fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Streamlit</span>
+                                <span class="tech-tag">Pandas</span>
+                            </div>
+                            <h3>Fitness Tracker Analysis</h3>
+                            <p>Integrated steps, calories, and sleep trackers into a cohesive Streamlit analytical dashboard featuring trend lines and correlations.</p>
+                            <div class="project-actions">
+                                <a href="https://github.com/vinayakbodke82" target="_blank" class="project-action-btn project-action-btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="#" target="_blank" class="project-action-btn project-action-btn-secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="glass-card project-card" data-category="dashboard" data-project="dashboard">
+                        <div class="project-visual">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech">
+                                <span class="tech-tag">SQL</span>
+                                <span class="tech-tag">Power BI</span>
+                                <span class="tech-tag">Data Model</span>
+                            </div>
+                            <h3>Data Analysis Dashboard</h3>
+                            <p>Aggregated relational retail databases, optimized queries, and compiled KPIs utilizing clean star schema modeling.</p>
+                            <div class="project-actions">
+                                <a href="https://github.com/vinayakbodke82" target="_blank" class="project-action-btn project-action-btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="#" target="_blank" class="project-action-btn project-action-btn-secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="glass-card project-card" data-category="ai" data-project="gemini">
+                        <div class="project-visual">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-tech">
+                                <span class="tech-tag">Gemini API</span>
+                                <span class="tech-tag">GCP Cloud Run</span>
+                                <span class="tech-tag">AI Studio</span>
+                            </div>
+                            <h3>Gemini Agent Cloud Deployment</h3>
+                            <p>Engineered and deployed a Generative AI assistant configured via Google AI Studio prompting and containerized on GCP Cloud Run.</p>
+                            <div class="project-actions">
+                                <a href="https://github.com/vinayakbodke82" target="_blank" class="project-action-btn project-action-btn-primary"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="https://ais-dev-txje2stkm5umdugwzw5ppf-929567928269.asia-east1.run.app/" target="_blank" class="project-action-btn project-action-btn-secondary"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live App</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Timeline Section -->
+        <section id="experience">
+            <div class="container reveal">
+                <h2 class="section-title">Education & Milestones</h2>
+                <div class="timeline">
+                    <!-- Item 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023 – 2027</div>
+                        <div class="timeline-content">
+                            <h3>B.Tech CSE (AI & Data Science)</h3>
+                            <div class="timeline-subtitle">Pimpri Chinchwad University, Pune</div>
+                            <p>Focusing on Core Data Science, Database Management Systems, and Artificial Intelligence foundations. Current CGPA: 6.77</p>
+                        </div>
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Passed in 2023</div>
+                        <div class="timeline-content">
+                            <h3>Class XII (HSC Board)</h3>
+                            <div class="timeline-subtitle">DY Patil ACS College</div>
+                            <p>Completed secondary science education focusing on Mathematics and Computer Science basics.</p>
+                        </div>
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">Passed in 2021</div>
+                        <div class="timeline-content">
+                            <h3>Class X (SSC Board)</h3>
+                            <div class="timeline-subtitle">Lion’s Club Education Association English Medium School</div>
+                            <p>Foundational primary education with standard science curriculum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- ===== CERTIFICATES SECTION ===== -->
+        <section id="certifications" class="certs-section">
+            <div class="container reveal">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-sub">Verified credentials from world-class institutions on Coursera</p>
+
+                <div class="certs-bento-grid">
+
+                    <!-- CARD 1 â€“ Google Data Analytics (large featured card) -->
+                    <div class="cert-flip-wrap featured-cert">
+                        <div class="cert-flip-inner">
+                            <!-- FRONT -->
+                            <div class="cert-front">
+                                <div class="cert-front-img">
+                                    <img src="certs/cert_google.png" alt="Google Data Analytics Certificate">
+                                </div>
+                                <div class="cert-front-ribbon google-ribbon">
+                                    <i class="fa-solid fa-shield-halved"></i> Verified
+                                </div>
+                                <div class="cert-front-footer">
+                                    <div class="cert-logo-pill google-pill">G</div>
+                                    <div>
+                                        <div class="cert-front-name">Google Data Analytics</div>
+                                        <div class="cert-front-type">Professional Certificate Â· 8 Courses</div>
+                                    </div>
+                                    <div class="flip-hint"><i class="fa-solid fa-rotate"></i></div>
+                                </div>
+                            </div>
+                            <!-- BACK -->
+                            <div class="cert-back google-back">
+                                <div class="cert-back-logo google-pill">G</div>
+                                <h3>Google Data Analytics</h3>
+                                <p class="cert-back-issuer">Google Career Certificates Â· Coursera</p>
+                                <p class="cert-back-date"><i class="fa-regular fa-calendar-check"></i> Issued: May 2024</p>
+                                <div class="cert-back-tags">
+                                    <span>SQL</span><span>R Programming</span><span>Tableau</span>
+                                    <span>Data Cleaning</span><span>Spreadsheets</span>
+                                </div>
+                                <a href="https://www.coursera.org/professional-certificates/google-data-analytics" target="_blank" class="cert-back-btn">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> View Credential
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 2 â€“ IBM Data Science -->
+                    <div class="cert-flip-wrap">
+                        <div class="cert-flip-inner">
+                            <div class="cert-front">
+                                <div class="cert-front-img">
+                                    <img src="certs/cert_ibm.png" alt="IBM Data Science Certificate">
+                                </div>
+                                <div class="cert-front-ribbon ibm-ribbon">
+                                    <i class="fa-solid fa-shield-halved"></i> Verified
+                                </div>
+                                <div class="cert-front-footer">
+                                    <div class="cert-logo-pill ibm-pill">IBM</div>
+                                    <div>
+                                        <div class="cert-front-name">IBM Data Science</div>
+                                        <div class="cert-front-type">Professional Certificate Â· 10 Courses</div>
+                                    </div>
+                                    <div class="flip-hint"><i class="fa-solid fa-rotate"></i></div>
+                                </div>
+                            </div>
+                            <div class="cert-back ibm-back">
+                                <div class="cert-back-logo ibm-pill">IBM</div>
+                                <h3>IBM Data Science</h3>
+                                <p class="cert-back-issuer">IBM Skills Network Â· Coursera</p>
+                                <p class="cert-back-date"><i class="fa-regular fa-calendar-check"></i> Issued: Aug 2024</p>
+                                <div class="cert-back-tags">
+                                    <span>Python</span><span>Machine Learning</span><span>Jupyter</span>
+                                    <span>Watson Studio</span><span>SQL</span>
+                                </div>
+                                <a href="https://www.coursera.org/professional-certificates/ibm-data-science" target="_blank" class="cert-back-btn">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> View Credential
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 3 â€“ Data Analysis with Python -->
+                    <div class="cert-flip-wrap">
+                        <div class="cert-flip-inner">
+                            <div class="cert-front">
+                                <div class="cert-front-img">
+                                    <img src="certs/cert_python.png" alt="Data Analysis Python Certificate">
+                                </div>
+                                <div class="cert-front-ribbon python-ribbon">
+                                    <i class="fa-solid fa-shield-halved"></i> Verified
+                                </div>
+                                <div class="cert-front-footer">
+                                    <div class="cert-logo-pill python-pill"><i class="fa-brands fa-python"></i></div>
+                                    <div>
+                                        <div class="cert-front-name">Data Analysis with Python</div>
+                                        <div class="cert-front-type">IBM Course Â· Coursera</div>
+                                    </div>
+                                    <div class="flip-hint"><i class="fa-solid fa-rotate"></i></div>
+                                </div>
+                            </div>
+                            <div class="cert-back python-back">
+                                <div class="cert-back-logo python-pill"><i class="fa-brands fa-python"></i></div>
+                                <h3>Data Analysis with Python</h3>
+                                <p class="cert-back-issuer">IBM Â· Coursera</p>
+                                <p class="cert-back-date"><i class="fa-regular fa-calendar-check"></i> Issued: Nov 2024</p>
+                                <div class="cert-back-tags">
+                                    <span>Pandas</span><span>NumPy</span><span>Matplotlib</span>
+                                    <span>EDA</span><span>Seaborn</span>
+                                </div>
+                                <a href="https://www.coursera.org/learn/data-analysis-with-python" target="_blank" class="cert-back-btn">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> View Credential
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 4 â€“ Machine Learning (icon-only) -->
+                    <div class="cert-flip-wrap cert-icon-card">
+                        <div class="cert-flip-inner">
+                            <div class="cert-front cert-front-icon ml-grad">
+                                <div class="cert-icon-big"><i class="fa-solid fa-brain"></i></div>
+                                <div class="cert-front-ribbon ml-ribbon"><i class="fa-solid fa-shield-halved"></i> Verified</div>
+                                <div class="cert-front-footer">
+                                    <div class="cert-logo-pill ml-pill">AI</div>
+                                    <div>
+                                        <div class="cert-front-name">Machine Learning</div>
+                                        <div class="cert-front-type">Specialization Â· DeepLearning.AI</div>
+                                    </div>
+                                    <div class="flip-hint"><i class="fa-solid fa-rotate"></i></div>
+                                </div>
+                            </div>
+                            <div class="cert-back ml-back">
+                                <div class="cert-back-logo ml-pill">AI</div>
+                                <h3>Machine Learning Specialization</h3>
+                                <p class="cert-back-issuer">DeepLearning.AI Â· Stanford Online Â· Coursera</p>
+                                <p class="cert-back-date"><i class="fa-regular fa-calendar-check"></i> Issued: Jan 2025</p>
+                                <div class="cert-back-tags">
+                                    <span>Supervised ML</span><span>Neural Networks</span>
+                                    <span>Regression</span><span>Decision Trees</span>
+                                </div>
+                                <a href="https://www.coursera.org/specializations/machine-learning-introduction" target="_blank" class="cert-back-btn">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> View Credential
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CARD 5 â€“ Python for Everybody (icon-only) -->
+                    <div class="cert-flip-wrap cert-icon-card">
+                        <div class="cert-flip-inner">
+                            <div class="cert-front cert-front-icon umich-grad">
+                                <div class="cert-icon-big"><i class="fa-brands fa-python"></i></div>
+                                <div class="cert-front-ribbon umich-ribbon"><i class="fa-solid fa-shield-halved"></i> Verified</div>
+                                <div class="cert-front-footer">
+                                    <div class="cert-logo-pill umich-pill">U</div>
+                                    <div>
+                                        <div class="cert-front-name">Python for Everybody</div>
+                                        <div class="cert-front-type">Specialization Â· U of Michigan</div>
+                                    </div>
+                                    <div class="flip-hint"><i class="fa-solid fa-rotate"></i></div>
+                                </div>
+                            </div>
+                            <div class="cert-back umich-back">
+                                <div class="cert-back-logo umich-pill">U</div>
+                                <h3>Python for Everybody</h3>
+                                <p class="cert-back-issuer">University of Michigan Â· Coursera</p>
+                                <p class="cert-back-date"><i class="fa-regular fa-calendar-check"></i> Issued: Mar 2024</p>
+                                <div class="cert-back-tags">
+                                    <span>Python</span><span>JSON</span><span>Web Scraping</span>
+                                    <span>Databases</span><span>APIs</span>
+                                </div>
+                                <a href="https://www.coursera.org/specializations/python" target="_blank" class="cert-back-btn">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i> View Credential
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!-- end .certs-bento-grid -->
+            </div>
+        </section>
+
+        <!-- Interactive Shell Widget Section -->
+        <section id="terminal">
+            <div class="container reveal">
+                <h2 class="section-title">Developer Command Shell</h2>
+                <p style="color: var(--text-muted); margin-bottom: 30px; max-width: 600px;">
+                    Recruiter or developer? Traverse my credentials directly using shell commands. Type <code>help</code> to get started.
+                </p>
+                <div class="terminal-card">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="term-btn term-btn-red"></span>
+                            <span class="term-btn term-btn-yellow"></span>
+                            <span class="term-btn term-btn-green"></span>
+                        </div>
+                        <div class="terminal-title">vinayak_bodke_shell.sh</div>
+                        <div><i class="fa-solid fa-terminal" style="color: var(--text-muted); font-size: 0.8rem;"></i></div>
+                    </div>
+                    <div class="terminal-body">
+                        <div id="terminal-output" class="terminal-output">
+                            <!-- Injected by script -->
+                        </div>
+                        <div class="terminal-prompt-line">
+                            <span class="term-prompt">visitor@vinayak:~$</span>
+                            <div class="terminal-input-wrapper">
+                                <input type="text" id="terminal-input" class="terminal-input" autofocus autocomplete="off" spellcheck="false">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container reveal">
+                <h2 class="section-title">Contact Me</h2>
+                <div class="contact-grid">
+                    <!-- Left: Info -->
+                    <div class="contact-info">
+                        <h3>Let's build something insightful together</h3>
+                        <p style="color: var(--text-muted);">
+                            Feel free to reach out for internship roles, collaboration on projects, or general inquiries about Data Analytics and Machine Learning.
+                        </p>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>vinayakbodke82@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+91 7498833735</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Pune, Maharashtra, India</p>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/vinayakbodke82" target="_blank" class="social-btn"><i class="fa-brands fa-github"></i></a>
+                            <a href="#" target="_blank" class="social-btn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="mailto:vinayakbodke82@gmail.com" class="social-btn"><i class="fa-solid fa-envelope"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Right: Form -->
+                    <div class="glass-card">
+                        <form id="contact-form" class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" class="form-control" placeholder="Type your message here..." required></textarea>
+                            </div>
+                            <button type="submit" id="submit-btn" class="btn btn-primary btn-submit" style="margin-top: 10px;">
+                                <span class="btn-text">Send Message</span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Project Detail Modal -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="modal-close"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-body">
+                <!-- Content injected dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-icon"><i class="fa-solid fa-circle-check"></i></div>
+        <div class="toast-content">
+            <h4 style="font-weight: 600; margin-bottom: 2px;">Message Sent!</h4>
+            <p style="font-size: 0.8rem; color: var(--text-muted);">Thank you, I will get back to you shortly.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Vinayak Somnath Bodke. All Rights Reserved. Crafted with passion & precision.</p>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script type="module" src="script.js"></script>
+</body>
+</html>
